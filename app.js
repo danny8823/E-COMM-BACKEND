@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URL).then(()=>{
 })
 
 const corsOption = {
-    origin: ["https://golfworld123456.netlify.app/"]
+    origin: ["https://golfworld123456.netlify.app"]
 }
 
 app.use(cors(corsOption))
