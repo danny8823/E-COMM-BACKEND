@@ -9,7 +9,7 @@ const errorHandler = require('./middlewares/errorHandlerMiddleware');
 
 require('dotenv').config()
 
-mongoose.connect(process.env.MONGO_URL).then(()=>{
+mongoose.connect('mongodb+srv://dannyyoo714:Jesuschrist8823!@e-comm.t7kba.mongodb.net/E-COMM?retryWrites=true&w=majority&appName=E-COMM').then(()=>{
     console.log('DATABASE CONNECTED')
 }).catch((error)=>{
     console.log('ERROR:',error.message)
